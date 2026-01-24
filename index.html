@@ -273,444 +273,449 @@ ul.timeline > li:before {
 
 
 
-<!-- Projects Section with Tabs -->
+
+
+<!-- projects Section -->
+
+
 <section class="my-5 text-center" id="projects" style="background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);">
 <h2 class="mb-4 bg-white text-dark">Projects</h2>
-<div class="container text-center">
-    
-	
-   <!-- Tabs Header -->
-  <ul class="nav nav-tabs" id="projectTabs" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="software-tab" data-bs-toggle="tab" data-bs-target="#softwareDngineering" type="button" role="tab">Software Engineering</button>
-    </li>
-	<li class="nav-item" role="presentation">
-      <button class="nav-link" id="gameDevelopment-tab" data-bs-toggle="tab" data-bs-target="#gameDevelopment" type="button" role="tab">Game Development</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="animation-tab" data-bs-toggle="tab" data-bs-target="#animation" type="button" role="tab">Animation</button>
-    </li>
-  </ul>
+  <div class="container d-flex flex-column align-items-center">
+   <!-- Projects Section (NO TABS / everything shows) -->
+<section id="projects" class="mt-5">
 
+  <div class="container">
 
+    <!-- =========================
+         SOFTWARE ENGINEERING
+    ========================== -->
+    <section id="software-engineering" class="mb-5">
+      <h2 class="mb-4">Software Engineering Projects</h2>
 
+      <div class="row">
+        <div class="col-md-6">
+          <video controls width="100%" style="height: 50vh; object-fit: cover;">
+            <source src="videos/cardReader.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
 
+          <p>
+            <strong>Attendance Tracking System</strong> <br />
+            <small><em>Completed: 2025 | Duration: 4 days | Type: Full Stack (Frontend + Backend)</em></small>
+          </p>
 
-  <!-- Projects Section -->
-  <div class="tab-content mt-3  " id="projectTabsContent" >
-    <!-- Software Engineering Projects -->
-    <div class="tab-pane fade show active" id="softwareDngineering" role="tabpanel">
-          <div class="row" >
-         <div class="col-md-6" >
-        <video controls width="100%" style="height: 50vh; object-fit: cover;">
+          <div class="text-start">
+            <p>
+              Developed a full-stack attendance tracking system using ASP.NET C# MVC and SQL Server, integrating
+              card reader technology for real-time attendance logging. The front end was built with HTML, CSS,
+              Bootstrap, and JavaScript to ensure a responsive and user-friendly interface. Implemented secure
+              authentication and role-based access control for both users and administrators. Reporting features
+              were also developed to analyze attendance data and generate insightful trends.
+            </p>
+          </div>
 
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/html.png" title="HTML" width="40" height="40" />
+            <img src="images/css.png" title="CSS" width="40" height="40" />
+            <img src="images/JavaScript.png" title="JavaScript" width="40" height="40" />
+            <img src="images/csharp.png" title="C#" width="40" height="40" />
+            <img src="images/asp.png" title="ASP.NET MVC" width="40" height="40" />
+            <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40" />
+            <img src="images/sqlServer.png" title="SQL Server" width="40" height="40" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <source src="videos/cardReader.mp4" type="video/mp4">
+    <!-- =========================
+         GAME DEVELOPMENT
+    ========================== -->
+    <section id="game-development" class="mb-5">
+      <h2 class="mb-4">Game Development Projects</h2>
 
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/vrpiano.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
 
-                    <p><strong>Attendance Tracking System</strong> <br>
-                   <small><em>Completed: 2025 | Duration: 4 days | Type: Full Stack (Frontend + Backend)</em></small>
-                    </p>
-                    
-					<div class="text-start">
-					
-					<p><strong>Attendance Tracking System</strong>
-                        <p>Developed a full-stack attendance tracking system using ASP.NET C# MVC and SQL Server, integrating card reader technology for real-time attendance logging. The front end was built with HTML, CSS, Bootstrap, and JavaScript to ensure a responsive and user-friendly interface. Implemented secure authentication and role-based access control for both users and administrators. Reporting features were also developed to analyze attendance data and generate insightful trends</p>
-					</div>
-					
+          <p>
+            <strong>VR Piano Learning System</strong> <br />
+            <small><em>In Progress: 2025 | Duration: Prototype | Type: VR / 3D</em></small>
+          </p>
 
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                     <img src="images/html.png" title="HTML" width="40" height="40">
-				     <img src="images/css.png" title="CSS" width="40" height="40">
-				     <img src="images/JavaScript.png" title="JavaScript" width="40" height="40">
-				     <img src="images/csharp.png" title="C#" width="40" height="40">
-					 <img src="images/asp.png" title="ASP.NET MVC" width="40" height="40">
-				     <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40">
-				     <img src="images/sqlServer.png" title="SQL Server" width="40" height="40">
-				  
-                  </div>
+          <div class="text-start">
+            <p>
+              <strong>VR Piano Learning System</strong> is a virtual reality project developed in Unity for the Meta Quest
+              platform. The system allows users to learn piano by following real-time visual note instructions mapped to
+              hand-tracked finger movements.
+            </p>
 
-		</div>
+            <p>
+              My primary contribution focuses on creating the <strong>timing and synchronization logic</strong> for piano keys
+              and note indicators. The project integrates <strong>hand-tracking input</strong> to simulate natural finger movement
+              and ensure each note aligns precisely with the correct timing.
+            </p>
+
+            <p>
+              This prototype demonstrates how <strong>immersive interaction</strong> and <strong>real-time feedback</strong> can enhance
+              music education. Future development will include full audio integration and advanced performance tracking.
+            </p>
+          </div>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/unity.png" title="Unity" width="40" height="40" />
+            <img src="images/csharp.png" title="C#" width="40" height="40" />
+            <img src="images/meta.png" title="Meta Quest" width="40" height="40" />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/Baddie_Bomb_Blobby Trailer_2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Baddie Bomb Blobby</strong> <br />
+            <small><em>Completed: 2025 | Duration: 8 days | Type: 2D</em></small>
+          </p>
+
+          <div class="text-start">
+            <p>
+              <strong>Baddie Bomb Blobby</strong> is an experimental 2D roguelike dating simulator designed to explore the
+              integration of ChatGPT and Large Language Models (LLMs) in generating an artificial world.
+            </p>
+
+            <p>
+              The development challenge was to create a framework capable of dynamically generating <strong>40 levels</strong> using
+              AI techniques. The <strong>roguelike genre</strong>, known for procedural level generation, was chosen to emphasize the
+              game's adaptability and AI-driven content.
+            </p>
+
+            <p>
+              The <strong>dating simulator component</strong>, being primarily text-based, allowed for real-time conversational
+              interaction with ChatGPT. The <strong>2D format</strong> was selected for its simplicity in generating environments at runtime.
+            </p>
+
+            <p>
+              Combining these elements, Baddie Bomb Blobby delivers a unique experience where <strong>procedurally generated gameplay</strong>
+              and <strong>AI-driven dialogue</strong> blend seamlessly in a dynamically evolving narrative.
+            </p>
+          </div>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/Photoshop.png" title="Photoshop" width="40" height="40" />
+            <img src="images/csharp.png" title="C#" width="40" height="40" />
+            <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40" />
+            <img src="images/unity.png" title="Unity" width="40" height="40" />
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/halloween2025.webm" type="video/webm" />
+            <source src="videos/halloween2025.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Halloween 2025</strong> <br />
+            <small><em>Completed: 2025 | Duration: 2 days | Type: 2D</em></small>
+          </p>
+
+          <div class="text-start">
+            <p>
+              <strong>Halloween 2025: 2D Shooter Game</strong> is a simple, Halloween-themed 2D shooter game developed using the Godot engine.
+              The project aims to showcase basic game mechanics, animation, and user interaction in a fun, festive context.
+            </p>
+
+            <p>
+              The main development challenge was to implement a <strong>mouse-controlled shooting system</strong>, where the player’s gun follows
+              the mouse position, offering a dynamic and engaging shooting experience.
+            </p>
+
+            <p>
+              The game also features a <strong>witch character</strong> that moves in a circular path. The <strong>enemy AI</strong> is designed to chase
+              the player. Pressing <strong>R</strong> restarts the game for quick replay.
+            </p>
+
+            <a href="https://shorturl.at/01CPM" target="_blank" rel="noopener">Code</a>
+
+            <p class="mt-3"><strong>Technologies Used:</strong></p>
+            <div class="d-flex flex-wrap gap-2">
+              <img src="images/csharp.png" title="C#" width="40" height="40" />
+              <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40" />
+              <img src="images/godot.png" title="Godot" width="40" height="40" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/pacman_3D.mp4" type="video/mp4" />
+            <source src="videos/pacman_3D.mp4" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Pacman 3D</strong> <br />
+            <small><em>Completed: 2024 | Duration: 8 days | Type: 3D</em></small>
+          </p>
+
+          <div class="text-start">
+            <p>
+              <strong>Pacman 3D</strong> is a classic arcade game reimagined in 3D. Navigate through the maze, eat pellets,
+              avoid ghosts, and collect power-ups to clear each level.
+            </p>
+
+            <p><strong>Tips and Strategies:</strong></p>
+            <ul>
+              <li><strong>Learn the Maze:</strong> Familiarize yourself with controls and danger areas.</li>
+              <li><strong>Use Corners:</strong> Use narrow paths to avoid ghosts and trap them when vulnerable.</li>
+              <li><strong>Time Power Pellets:</strong> Wait for ghosts to get close, then turn the tables.</li>
+            </ul>
+
+            <a href="files/PacmanUserManual.pdf" target="_blank" rel="noopener">User Manual</a>
+            <br /><br />
+            <a href="https://tinyurl.com/3d4pdr9y" target="_blank" rel="noopener">Code</a>
+
+            <p class="mt-3"><strong>Technologies Used:</strong></p>
+            <div class="d-flex flex-wrap gap-2">
+              <img src="images/csharp.png" title="C#" width="40" height="40" />
+              <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40" />
+              <img src="images/monogame.png" title="MonoGame" width="40" height="40" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ANIMATION
+    ========================== -->
+    <section id="animation-projects">
+      <h2 class="mb-4">Animation Projects</h2>
+
+      <!-- Row 1 -->
+	  
+      <div class="row">
+	  <!-- donut project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/dounut.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Dounut Animation</strong> <br />
+            <small><em>Completed: 2025 | Duration: 1 day | Type: 3D</em></small>
+          </p>
+
+          <p class="text-start">
+            Created in Blender using sculpting techniques to add organic details and icing drips. Materials were set up with subsurface
+            scattering and glossy shaders for realism. Rendered in Cycles with HDRI lighting and denoising for a polished final look.
+          </p>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/blender.png" title="Blender" width="40" height="40" />
+          </div>
+        </div>
+		<!-- end donut project-->
 		
+		 <!-- robot Girl project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/robotGirl.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>robot Girl Model</strong> <br />
+            <small><em>Completed: 2025 | Duration: 1 day | Type: 3D</em></small>
+          </p>
+
+          <p class="text-start">
+           This 3D robot girl model was sculpted in Blender with a focus on blending mechanical design and human-like facial features. The sculpt emphasizes clean, stylized forms while maintaining believable anatomy. A protective helmet was designed to integrate seamlessly with the head, reinforcing the character’s futuristic identity.
+          </p>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/blender.png" title="Blender" width="40" height="40" />
+          </div>
+        </div>
+		<!-- end robot Girl project-->
+		
+		
+		
+         <!-- bouncingbox project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/bouncingbox.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Bouncing Box Animation</strong> <br />
+            <small><em>Completed: 2025 | Duration: 1 day | Type: 3D</em></small>
+          </p>
+
+          <p class="text-start">
+            Created in Blender, this 3D animation showcases a bouncing box. The goal was to capture fluid motion and create realistic
+            bounce dynamics using keyframe animation techniques in Blender.
+          </p>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/blender.png" title="Blender" width="40" height="40" />
+          </div>
+        </div>
+		<!-- end bouncingbox project-->
 		
       </div>
-	  </br>
-    </div>
-	
-	 <!-- Game Development Projects -->
-    <div class="tab-pane fade show" id="gameDevelopment" role="tabpanel">
-      <!-- Game Development Projects Row 1 -->
+
+      <br /><br />
+
+      <!-- Row 2 -->
       <div class="row">
 	  
-	     <div class="col-md-6">
-  <video controls width="100%">
-    <source src="videos/vrpiano.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video><br />
+	  <!-- dragonBurnCity project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/dragonBurnCity.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
 
-  <p><strong>VR Piano Learning System</strong> <br>
-    <small><em>In Progress: 2025 | Duration: Prototype | Type: VR / 3D</em></small>
-  </p>
+          <p>
+            <strong>Dragon in City</strong> <br />
+            <small><em>Completed: 2024 | Duration: 1 day | Type: 2D</em></small>
+          </p>
 
-  <div class="text-start">
-    <p>
-      <strong>VR Piano Learning System</strong> is a virtual reality project developed in Unity for the Meta Quest platform. 
-      The system allows users to learn piano by following real-time visual note instructions mapped to hand-tracked finger movements.
-    </p>
+          <p class="text-start">
+            This is a 2D animation done in Adobe After Effects. It is about a dragon destroying the city.
+            The work was challenging in the transition from daylight to night and the burning city effect.
+          </p>
 
-    <p>
-      My primary contribution focuses on creating the <strong>timing and synchronization logic</strong> for piano keys and note indicators.
-      The project integrates <strong>hand-tracking input</strong> to simulate natural finger movement and ensure each note aligns precisely with the correct timing.
-    </p>
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/Photoshop.png" title="Photoshop" width="40" height="40" />
+            <img src="images/AfterEffects.png" title="After Effects" width="40" height="40" />
+          </div>
+        </div>
+		
+		<!-- end dragonBurnCity project-->
 
-    <p>
-      This prototype demonstrates how <strong>immersive interaction</strong> and <strong>real-time feedback</strong> can enhance music education. 
-      Future development will include full audio integration and advanced performance tracking.
-    </p>
+
+        <!-- horse_animation project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/horse_animation.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Running Horse</strong> <br />
+            <small><em>Completed: 2023 | Duration: 1 day | Type: 2D</em></small>
+          </p>
+
+          <p class="text-start">
+            This is a 2D animation done in Photoshop. It’s about a horse running in Arizona.
+            I learned timing and placing background layers (foreground / midground / background).
+          </p>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/Photoshop.png" title="Photoshop" width="40" height="40" />
+            <img src="images/AfterEffects.png" title="After Effects" width="40" height="40" />
+          </div>
+        </div>
+		<!-- end horse_animation project-->
+      </div>
+
+      <br /><br />
+
+      <!-- Row 3 -->
+      <div class="row">
+	  <!-- sadDragon project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/sadDragon.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Sad Dragon</strong> <br />
+            <small><em>Completed: 2023 | Duration: 1 day | Type: 2D</em></small>
+          </p>
+
+          <p class="text-start">
+            The artwork is about a sad dragon flying in the sky with a bird as a side character.
+            I used an open-source dragon sound online and combined it with bird sound for a natural feeling.
+          </p>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/Photoshop.png" title="Photoshop" width="40" height="40" />
+            <img src="images/AfterEffects.png" title="After Effects" width="40" height="40" />
+          </div>
+        </div>
+		 <!-- end sadDragon project-->
+
+        <!-- bird animation project-->
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/bird_animation.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <br /><br />
+
+          <p>
+            <strong>Bird Animation</strong> <br />
+            <small><em>Completed: 2024 | Duration: 1 day | Type: 2D</em></small>
+          </p>
+
+          <p class="text-start">
+            A bird flying in the sky is wonderful, but adding rain gives challenge and shows the bird’s strength against adversity.
+          </p>
+
+          <p><strong>Technologies Used:</strong></p>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/Photoshop.png" title="Photoshop" width="40" height="40" />
+          </div>
+        </div>
+		<!-- bird animation project-->
+      </div>
+    </section>
+
   </div>
+</section>
 
-  <p><strong>Technologies Used:</strong></p>
-  <div class="d-flex flex-wrap gap-2">
-    <img src="images/unity.png" title="Unity" width="40" height="40">
-    <img src="images/csharp.png" title="C#" width="40" height="40">
-    <img src="images/meta.png" title="Meta Quest" width="40" height="40">
-    
-   
-  </div>
-</div>
-
-		 
-	  
-	  
-         <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/Baddie_Bomb_Blobby Trailer_2.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Baddie Bomb Blobby</strong> <br>
-                   <small><em>Completed: 2025 | Duration: 8 days | Type: 2D</em></small>
-                    </p>
-                    
-					<div class="text-start">
-					
-					<p><strong>Baddie Bomb Blobby</strong> is an experimental 2D roguelike dating simulator designed to explore the integration of ChatGPT and Large Language Models (LLMs) in generating an artificial world.</p>
-
-                        <p>The development challenge was to create a framework capable of dynamically generating <strong>40 levels</strong> using AI techniques. The <strong>roguelike genre</strong>, known for procedural level generation, was chosen to emphasize the game's adaptability and AI-driven content.</p>
-
-                        <p>The <strong>dating simulator component</strong>, being primarily text-based, allowed for real-time conversational interaction with ChatGPT. The <strong>2D format</strong> was selected for its simplicity in generating environments at runtime.</p>
-
-                        <p>Combining these elements, Baddie Bomb Blobby delivers a unique experience where <strong>procedurally generated gameplay</strong> and <strong>AI-driven dialogue</strong> blend seamlessly in a dynamically evolving narrative.</p>
-
-					</div>
-					
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
-				  <img src="images/csharp.png" title="C#" width="40" height="40">
-				  <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40">
-				  <img src="images/unity.png" title="Unity" width="40" height="40">
-				  
-                  <!-- more tools -->
-                  </div>
-
-		</div>
-		 
-		
-      
-		
-		
-      </div>
-	  </br>
-	  
-	  
-	  
-	  
-	   <!-- Game Development Projects Row 2 -->
-      <div class="row">
-          <div class="col-md-6">
- 
- <video controls width="100%">
-             <source src="videos/halloween2025.webm" type="video/webm">
-             <source src="videos/halloween2025.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Halloween 2025</strong> <br>
-                   <small><em>Completed: 2025 | Duration: 2 days | Type: 2D</em></small>
-                    </p>
-                    
-					<div class="text-start">
-					
-					<p><strong>Halloween 2025: 2D Shooter Game</strong> is a simple, Halloween-themed 2D shooter game developed using the Godot engine. The project aims to showcase basic game mechanics, animation, and user interaction in a fun, festive context.</p> 
-					<p>The main development challenge was to implement a <strong>mouse-controlled shooting system</strong>, where the player’s gun follows the mouse position, offering a dynamic and engaging shooting experience. The game also features a <strong>witch character</strong>
-					that moves in a circular path, creating unique gameplay elements.</p> <p>The <strong>enemy AI</strong> is designed to chase the player, adding challenge and excitement to the game. When the player collides with an enemy, the game starts, and pressing the <strong>R key</strong>
- allows for easy restart, making the game replayable.</p>
-					<p>Additionally, a <strong>2D animation</strong> of a dancing character enhances the game’s theme, contributing to its Halloween atmosphere. This project demonstrates my ability to create engaging mechanics and integrate basic animations and input handling into a complete playable game.</p>
-					
-					<a href="https://shorturl.at/01CPM" target="_blank">Code</a>
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  
-				  <img src="images/csharp.png" title="C#" width="40" height="40">
-				  <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40">
-				  <img src="images/godot.png" title="Godot" width="40" height="40">
-				  
-       
-                  <!-- more tools -->
-                  </div>
-
-		</div>
-
-		</div>
-		
-		     <div class="col-md-6">
- 
- <video controls width="100%">
-             <source src="videos/pacman_3D.mp4" type="video/mp4">
-			 <source src="videos/pacman_3D.mp4" type="video/webm">
-             
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                   <p><strong>Pacman 3D</strong> <br>
-                   <small><em>Completed: 2024 | Duration: 8 days | Type: 3D</em></small>
-                    </p>
-
-                    
-					<div class="text-start">
-					
-					<p ><strong>Pacman 3D</strong> is a 2D classic arcade game reimagined in stunning 3D. Navigate through the maze, eat pellets, avoid ghosts, and collect power-ups to clear each level. In this 3D version, you control Pac-Man as a 2D but in 3D such as walking in the mazes, eating pellets and avoiding the normal ghosts. Collect special power-up pellets to gain power and eat the ghosts once they become weak before they regain their power state.</p>
-
-                    <p><strong>Pacman:</strong> Is the hero Sphere who gets rid of the ghosts from the maze. He likes to eat when he is happy.</p>
-
-                    <p><strong>Ghosts:</strong> There are 3 colorful ghosts that will try to catch Pac-Man. If they touch Pac-Man, game over. Pac-Man defeats them by avoiding them or using power-ups to eat the ghosts.</p>
-
-                    <p ><strong>Tips and Strategies:</strong></p>
-                        <ul>
-                            <li><strong>Learn the Maze:</strong> Familiarize yourself with controls and stay away from the ghosts’ areas.</li>
-                            <li><strong>Use Corners to Your Advantage:</strong> The maze has corners and narrow paths. Use them to avoid ghosts and trap them when they are vulnerable.</li>
-                            <li><strong>Time Your Power Pellets:</strong> Don’t rush to eat a Power Pellet unless it’s safe. Wait for the ghosts to get close, then turn the tables.</li>
-
-                        </ul>
-                        <a  href="files/PacmanUserManual.pdf" target="_blank">User Manual</a>
-                        <br><br>
-                        <a href="https://tinyurl.com/3d4pdr9y" target="_blank">Code</a>
-						
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  
-				  <img src="images/csharp.png" title="C#" width="40" height="40">
-				  <img src="images/VisualStudio.png" title="VisualStudio" width="40" height="40">
-				  <img src="images/monogame.png" title="MonoGame" width="40" height="40">
-				 
-
-	   
-	   
-                  <!-- more tools -->
-                  </div>
-
-		</div>
-
-		</div>
-		
-		
-
-		
-		
-      </div>
-	  </br>
-	  
-    </div>
-	
-	
-                            
-
-    <!-- Animation Projects -->
-    <div class="tab-pane fade " id="animation" role="tabpanel">
-	<!-- Animation Projects Row 1 -->
-      <div class="row">
-	  
-	  <!-- Animation Project 1 -->
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/dounut.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Dounut Animation</strong> <br>
-                   <small><em>Completed: 2025 | Duration: 1 day | Type: 3D</em></small>
-                    </p>
-                    <p class="text-start"> Created in Blender using sculpting techniques to add organic details and icing drips. Materials were set up with subsurface scattering and glossy shaders for realism. Rendered in Cycles with HDRI lighting and denoising for a polished final look.
-					</p>
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/blender.png" title="Blender" width="40" height="40">
-                  <!-- more tools -->
-                  </div>
-		</div>
-		
-		<!-- Animation Project 2 -->
-		 <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/bouncingbox.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Bouncing Box Animation</strong> <br>
-                   <small><em>Completed: 2025 | Duration: 1 day | Type: 3D</em></small>
-                    </p>
-                    <p class="text-start"> Created in Blender, this 3D animation showcases a bouncing box. The goal was to capture fluid motion and create realistic bounce dynamics using keyframe animation techniques in Blender.
-					</p>
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/blender.png" title="Blender" width="40" height="40">
-                  <!-- more tools -->
-                  </div>
-		</div>
-		 
-		
-	
-		
-       
-		
-		
-      </div>
-	  
-	  <!-- Animation Projects Row 2 -->
-	   <div class="row">
-	   
-	   
-	    <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/dragonBurnCity.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Dragon in City</strong> <br>
-                   <small><em>Completed: 2024 | Duration: 1 day | Type: 2D</em></small>
-                    </p>
-                    <p class="text-start">This is a 2D animation which was done in Adobe After Effect. It is about a dragon destroying the city.The work was a little challenging in the transition between day light to night then burning city in fire.
-					</p>
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
-				  <img src="images/AfterEffects.png" title="After Effects" width="40" height="40">
-                  <!-- more tools -->
-                  </div>
-
-		</div>
-	   
-	   
-	   
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/horse_animation.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Running Horse</strong> <br>
-                   <small><em>Completed: 2023 | Duration: 1 day | Type: 2D</em></small>
-                    </p>
-                    <p class="text-start">This is a 2D animation which was done in Photoshop. It is about horse running in Arizona.I learned in this project the timing and placing background with both front-ground and middle ground.</p>
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
-				  <img src="images/AfterEffects.png" title="After Effects" width="40" height="40">
-                  <!-- more tools -->
-                  </div>
-		</div>
-		
-		
-      </div>
-	   
-	  
-	  <!-- Animation Projects Row 3 -->
-	    <div class="row">
-	   
-	   
-	   
-	   
-       
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/sadDragon.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Sad Dragon</strong> <br>
-                   <small><em>Completed: 2023 | Duration: 1 day | Type: 2D</em></small>
-                    </p>
-                    <p class="text-start">The artwork is about a sad dragon flying in the sky with a bird included as a side character.I used an open-source dragon sound online and combined it with the bird sound to get a natural feeling. </p>
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
-				  <img src="images/AfterEffects.png" title="After Effects" width="40" height="40">
-                  <!-- more tools -->
-                  </div>
-
-		</div>
-		
-			<!-- Animation Project 3 -->
-		  <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/bird_animation.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video><br />
-                        
-
-                    <p><strong>Bird Animation</strong> <br>
-                   <small><em>Completed: 2024 | Duration: 1 day | Type: 2D</em></small>
-                    </p>
-                    <p class="text-start"> A bird flying in the sky is wonderful, but without adding challenge to it, it’s not great. Adding rain gives the message that the bird's wings are strong against adversity.
-                   </p>
-
-                   <p><strong>Technologies Used:</strong></p>
-                   <div class="d-flex flex-wrap gap-2">
-                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
-                  <!-- more tools -->
-                  </div>
-		</div>
-		
-		
-      </div>
-	   
-	  
-	  
-    </div>
   </div>
 </section>
 
 
-
-    
 
 
 <!-- Skills Section -->
